@@ -1,0 +1,7 @@
+site_name: TaurCSS
+
+theme:
+   name: material
+   palette:
+      primary: black
+      accent: blue
