@@ -1,144 +1,242 @@
-## Global Elements
-
--  `*` – Applies universal styles like box-sizing and margin reset.
--  `html` – Base HTML element styling, often sets font and background.
--  `body` – Main container styling, typically sets font-family and color.
-
 ## Typography
 
--  `h1` – Styles the largest heading.
--  `h2` – Styles second-level heading.
--  `h3` – Styles third-level heading.
--  `h4` – Styles fourth-level heading.
--  `h5` – Styles fifth-level heading.
--  `h6` – Styles sixth-level heading.
--  `p` – Applies paragraph text styling.
+-  `h1` to `h6` – Styles for headings from largest (`h1`) to smallest (`h6`).
+-  `p` – Paragraph text styling.
 -  `li` – Styles list items with padding or marker tweaks.
 
-## Grid System
+## Layout Systems
+
+### Grid System
 
 -  `.grid` – Enables CSS grid layout.
--  `.grid.dense` – Collapses grid gaps to create denser layout.
+-  `.grid.dense` – Collapses grid gaps for a denser layout.
 -  `.grid.wide` – Expands grid container width.
--  `.grid.cols-2` – Sets two equal-width grid columns.
--  `.grid.cols-3` – Sets three equal-width grid columns.
--  `.grid.cols-4` – Sets four equal-width grid columns.
+-  `.grid.cols-2` – Defines two equal-width grid columns.
+-  `.grid.cols-3` – Defines three equal-width grid columns.
+-  `.grid.cols-4` – Defines four equal-width grid columns.
 
-## Flex Layout
+### Flexbox System
 
 -  `.flex` – Applies flexbox layout.
 -  `.flex.column` – Changes flex direction to column.
--  `.flex.center` – Centers items both horizontally and vertically.
--  `.flex.between` – Justifies content with space between.
--  `.flex.around` – Justifies content with space around.
--  `.flex.end` – Aligns content to the end of container.
+-  `.flex.center` – Centers items horizontally and vertically.
+-  `.flex.between` – Justifies content with space between items.
+-  `.flex.around` – Justifies content with space around items.
+-  `.flex.end` – Aligns items to the end of the container.
+-  `.flex.mobile-row` – On mobile, forces flex direction to row.
 
-## Spacing
+## Boxes and Containers
 
--  `.space > * + *` – Adds consistent spacing between siblings.
--  `.space.tight > * + *` – Reduces spacing between items.
--  `.space.loose > * + *` – Increases spacing between items.
--  `.space.huge > * + *` – Adds very large spacing between items.
+-  `.box` – Basic box container styling.
+
+-  `.r-box` – Rounded box with border-radius.
+
+-  `.danger-box` – Box styled to indicate danger or error (usually red).
+
+-  `.success-box` – Box styled to indicate success (usually green).
+
+-  `.info-box` – Box styled to show informational messages.
+
+-  `.page` – Wrapper for page-level container.
+
+-  `.container` – Central layout container.
+
+-  `.container.narrow` – Restricts container width to a narrow layout.
+
+-  `.container.wide` – Expands container to a wider layout.
+
+## Sections
+
+-  `.section` – Content section wrapper.
+-  `.section.compact` – Section with reduced padding.
+-  `.section.spacious` – Section with increased padding.
+
+## Spacing Utilities
+
+### Padding Top (`pt-`)
+
+-  `.pt-1` to `.pt-10` – Adds increasing top padding from 1 to 10 units.
+
+### Padding Bottom (`pb-`)
+
+-  `.pb-1` to `.pb-10` – Adds increasing bottom padding from 1 to 10 units.
+
+### Padding Left (`pl-`)
+
+-  `.pl-1` to `.pl-10` – Adds increasing left padding from 1 to 10 units.
+
+### Padding Right (`pr-`)
+
+-  `.pr-1` to `.pr-10` – Adds increasing right padding from 1 to 10 units.
+
+### Padding Horizontal (`px-`)
+
+-  `.px-1` to `.px-10` – Adds increasing horizontal padding (left & right).
+
+### Padding Vertical (`py-`)
+
+-  `.py-1` to `.py-10` – Adds increasing vertical padding (top & bottom).
+
+## Hero Components
+
+-  `.hero` – Main hero section container.
+-  `.hero::before` – Pseudo-element for background or overlay styling.
+-  `.hero-content` – Container for hero text and elements.
+-  `.hero-title` – Styling for main hero heading.
+-  `.hero-subtitle` – Styling for hero subtitle text.
+-  `.hero-cta` – Container for call-to-action buttons in hero.
+-  `.hero-btn` – Base button styling inside hero.
+-  `.hero-btn--primary` – Primary styled hero button.
+-  `.hero-btn--primary:hover` – Hover state for primary hero button.
+-  `.hero-btn--secondary` – Secondary styled hero button.
+-  `.hero-btn--secondary:hover` – Hover state for secondary hero button.
+-  `.hero[data-colors]` – Hero with customizable color properties.
+
+### Hero Color Variants
+
+-  `.hero--red`
+-  `.hero--green`
+-  `.hero--purple`
+-  `.hero--orange`
+-  `.hero--pink`
+-  `.hero--teal`
+-  `.hero--dark`
+
+## Quotes
+
+-  `.quote` – Styles blockquotes or quote elements.
+-  `.quote:hover` – Hover state for quote.
+-  `.quote::before` – Decorative quote mark or icon.
+
+## Spacing Between Elements
+
+-  `.space > * + *` – Adds default spacing between direct children.
+-  `.space.tight > * + *` – Reduced spacing between children.
+-  `.space.loose > * + *` – Increased spacing between children.
+-  `.space.huge > * + *` – Very large spacing between children.
 
 ## Buttons
 
 -  `.btn` – Base button styling.
--  `.btn:hover` – Hover style for primary button.
--  `.btn.secondary` – Secondary button variant.
--  `.btn.secondary:hover` – Hover style for secondary button.
--  `.btn.success` – Success state button styling (green or similar).
--  `.btn.danger` – Danger state button styling (red or similar).
--  `.btn.large` – Increases button size.
--  `.btn.small` – Decreases button size.
+-  `.btn:hover` – Hover effect on button.
+-  `.btn.secondary` – Secondary button style.
+-  `.btn.secondary:hover` – Hover state for secondary button.
+-  `.btn.success` – Success (green) button style.
+-  `.btn.danger` – Danger (red) button style.
+-  `.btn.large` – Large button size.
+-  `.btn.small` – Small button size.
 
 ## Cards
 
--  `.card` – Base card component styling.
--  `.card:hover` – Adds hover effect to card.
--  `.card.highlight` – Applies emphasis to a card.
--  `.card.compact` – Reduces padding and spacing in card.
--  `.card.spacious` – Adds extra padding/spacing in card.
+-  `.card` – Base card style.
+-  `.card:hover` – Hover effect on card.
+-  `.card.highlight` – Highlighted card appearance.
+-  `.card.compact` – Compact card with less padding.
+-  `.card.spacious` – Spacious card with more padding.
 
 ## Forms
 
--  `.form-group` – Groups label and input elements.
+-  `.form-group` – Wrapper for form fields.
 -  `.form-group label` – Styles form labels.
 -  `.form-group input` – Styles input fields.
 -  `.form-group textarea` – Styles textareas.
 -  `.form-group select` – Styles select dropdowns.
--  `.form-group input:focus` – Focus style for input.
--  `.form-group textarea:focus` – Focus style for textarea.
--  `.form-group select:focus` – Focus style for select.
-
-## Containers
-
--  `.container` – Central layout container.
--  `.container.narrow` – Restricts container to a narrow width.
--  `.container.wide` – Expands container to full or wide width.
-
-## Sections
-
--  `.section` – Defines a content section.
--  `.section.compact` – Reduces padding in section.
--  `.section.spacious` – Increases padding in section.
+-  `.form-group input:focus` – Focus style for inputs.
+-  `.form-group textarea:focus` – Focus style for textareas.
+-  `.form-group select:focus` – Focus style for selects.
 
 ## Responsive Utilities
 
--  `.hide-mobile` – Hides element on mobile viewports.
--  `.show-mobile` – Shows element only on mobile viewports.
+-  `.hide-mobile` – Hides elements on mobile.
+-  `.show-mobile` – Shows elements only on mobile.
 
 ## Media Queries
 
 ### `@media (max-width: 768px)`
 
--  `.hide-mobile` – Hides elements on smaller screens.
--  `.show-mobile` – Shows elements on smaller screens.
--  `.grid` – Adjusts grid layout for mobile.
--  `.flex` – Adjusts flexbox layout for mobile.
--  `.flex.mobile-row` – Forces flex direction row on mobile.
+-  `.hide-mobile` – Hides on small screens.
+-  `.show-mobile` – Shows on small screens.
+-  `.grid` – Adjusts grid for mobile.
+-  `.flex` – Adjusts flex for mobile.
+-  `.flex.mobile-row` – Forces flex direction to row on mobile.
+-  `.hero` – Responsive adjustments for hero section.
+-  `.hero-cta` – Responsive hero CTA container.
+-  `.hero-btn` – Responsive hero buttons.
 
 ## Theming
 
--  `.theme-dark` – Applies dark theme styles.
--  `.theme-dark .card` – Dark-themed card.
--  `.theme-dark .form-group input` – Dark input fields.
+-  `.theme-dark` – Applies dark theme styles globally.
+-  `.theme-dark .card` – Dark-themed cards.
+-  `.theme-dark .form-group input` – Dark-themed inputs.
 -  `.theme-dark .form-group textarea` – Dark-themed textareas.
--  `.theme-dark .form-group select` – Dark-themed select dropdowns.
+-  `.theme-dark .form-group select` – Dark-themed selects.
 
-## Animations (Base)
+## Animations
 
--  `.animate` – Applies a base animation class.
--  `@keyframes fadeInUp` – Keyframe for upward fade animation.
--  `.animate.delay-1` – Adds short delay before animation starts.
--  `.animate.delay-2` – Adds medium delay before animation starts.
--  `.animate.delay-3` – Adds long delay before animation starts.
+### Keyframes
 
-## Animation Classes
+-  `@keyframes fadeIn`
+-  `@keyframes fadeInUp`
+-  `@keyframes fadeInDown`
+-  `@keyframes fadeInLeft`
+-  `@keyframes fadeInRight`
+-  `@keyframes slideInUp`
+-  `@keyframes slideInDown`
+-  `@keyframes slideInLeft`
+-  `@keyframes slideInRight`
+-  `@keyframes scaleIn`
+-  `@keyframes scaleInCenter`
+-  `@keyframes scaleUp`
+-  `@keyframes rotateIn`
+-  `@keyframes flipInX`
+-  `@keyframes flipInY`
+-  `@keyframes bounce`
+-  `@keyframes pulse`
+-  `@keyframes shake`
+-  `@keyframes staggerFadeInUp`
 
--  `.anim-fadeIn` – Fades in the element from transparent.
--  `.anim-fadeInUp` – Fades in and slides the element upward.
--  `.anim-fadeInDown` – Fades in and slides the element downward.
--  `.anim-fadeInLeft` – Fades in and slides the element from the left.
--  `.anim-fadeInRight` – Fades in and slides the element from the right.
--  `.anim-slideInUp` – Slides the element upward into view.
--  `.anim-slideInDown` – Slides the element downward into view.
--  `.anim-slideInLeft` – Slides the element in from the left.
--  `.anim-slideInRight` – Slides the element in from the right.
--  `.anim-scaleIn` – Scales the element up from zero.
--  `.anim-scaleInCenter` – Scales and centers the element on entry.
--  `.anim-rotateIn` – Rotates the element into view.
--  `.anim-flipInX` – Flips the element along the X axis.
--  `.anim-flipInY` – Flips the element along the Y axis.
+### Animation Classes
+
+-  `.anim-fadeIn`
+-  `.anim-fadeInUp`
+-  `.anim-fadeInDown`
+-  `.anim-fadeInLeft`
+-  `.anim-fadeInRight`
+-  `.anim-slideInUp`
+-  `.anim-slideInDown`
+-  `.anim-slideInLeft`
+-  `.anim-slideInRight`
+-  `.anim-scaleIn`
+-  `.anim-scaleInCenter`
+-  `.anim-rotateIn`
+-  `.anim-flipInX`
+-  `.anim-flipInY`
+-  `.anim-bounce`
+-  `.anim-pulse`
+-  `.anim-shake`
+-  `.anim-fast` – Fast animation speed.
+-  `.anim-slow` – Slow animation speed.
+-  `.anim-slower` – Slower animation speed.
+-  `.anim-delay-1` to `.anim-delay-5` – Animation delays from shortest to longest.
+
+### Hover Animations
+
+-  `.hover-scaleUp:hover` – Scales element up on hover.
+-  `.hover-pulse:hover` – Pulses element on hover.
+
+### Stagger Animation Helpers
+
+-  `.stagger-container > *:nth-child(1)` through `.stagger-container > *:nth-child(6)` – Apply stagger delays for children.
 
 ## Demo Components
 
--  `.demo-section` – Container for demonstration or example blocks.
--  `.demo-section h2` – Heading style for demo sections.
--  `.color-demo` – Displays a color palette or color preview.
+-  `.demo-section` – Container for demo content.
+-  `.demo-section h2` – Heading style inside demo section.
+-  `.color-demo` – Displays color swatches or palettes.
 
 ## Gradients
 
--  `.gradient-1` – Applies the first gradient style.
--  `.gradient-2` – Applies the second gradient style.
--  `.gradient-3` – Applies the third gradient style.
--  `.gradient-4` – Applies the fourth gradient style.
+-  `.gradient-1`
+-  `.gradient-2`
+-  `.gradient-3`
+-  `.gradient-4`
