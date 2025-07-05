@@ -344,7 +344,7 @@ li {
 }
 
 /* Alternative color themes */
-.hero--red {
+.hero-red {
    --hero-primary: #ef4444;
    --hero-secondary: #f97316;
    --hero-accent: #dc2626;
@@ -354,7 +354,7 @@ li {
    --hero-btn-text: #991b1b;
 }
 
-.hero--green {
+.hero-green {
    --hero-primary: #10b981;
    --hero-secondary: #059669;
    --hero-accent: #047857;
@@ -364,7 +364,7 @@ li {
    --hero-btn-text: #064e3b;
 }
 
-.hero--purple {
+.hero-purple {
    --hero-primary: #8b5cf6;
    --hero-secondary: #a855f7;
    --hero-accent: #7c3aed;
@@ -374,7 +374,7 @@ li {
    --hero-btn-text: #581c87;
 }
 
-.hero--orange {
+.hero-orange {
    --hero-primary: #f97316;
    --hero-secondary: #ea580c;
    --hero-accent: #fb923c;
@@ -384,7 +384,7 @@ li {
    --hero-btn-text: #9a3412;
 }
 
-.hero--pink {
+.hero-pink {
    --hero-primary: #ec4899;
    --hero-secondary: #db2777;
    --hero-accent: #be185d;
@@ -394,7 +394,7 @@ li {
    --hero-btn-text: #831843;
 }
 
-.hero--teal {
+.hero-teal {
    --hero-primary: #14b8a6;
    --hero-secondary: #0d9488;
    --hero-accent: #0f766e;
@@ -404,7 +404,7 @@ li {
    --hero-btn-text: #134e4a;
 }
 
-.hero--dark {
+.hero-dark {
    --hero-primary: #374151;
    --hero-secondary: #4b5563;
    --hero-accent: #1f2937;

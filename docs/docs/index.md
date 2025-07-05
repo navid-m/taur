@@ -94,13 +94,13 @@
 
 ### Hero Color Variants
 
--  `.hero--red`
--  `.hero--green`
--  `.hero--purple`
--  `.hero--orange`
--  `.hero--pink`
--  `.hero--teal`
--  `.hero--dark`
+-  `.hero-red`
+-  `.hero-green`
+-  `.hero-purple`
+-  `.hero-orange`
+-  `.hero-pink`
+-  `.hero-teal`
+-  `.hero-dark`
 
 ## Quotes
 
