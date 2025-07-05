@@ -28,21 +28,13 @@
 ## Boxes and Containers
 
 -  `.box` – Basic box container styling.
-
 -  `.r-box` – Rounded box with border-radius.
-
--  `.danger-box` – Box styled to indicate danger or error (usually red).
-
--  `.success-box` – Box styled to indicate success (usually green).
-
+-  `.danger-box` – Box styled to indicate danger or error.
+-  `.success-box` – Box styled to indicate success.
 -  `.info-box` – Box styled to show informational messages.
-
 -  `.page` – Wrapper for page-level container.
-
 -  `.container` – Central layout container.
-
 -  `.container.narrow` – Restricts container width to a narrow layout.
-
 -  `.container.wide` – Expands container to a wider layout.
 
 ## Sections
@@ -50,47 +42,50 @@
 -  `.section` – Content section wrapper.
 -  `.section.compact` – Section with reduced padding.
 -  `.section.spacious` – Section with increased padding.
+-  `.part-section` – Section block for page parts.
+-  `.part-section h2` – Heading inside part section.
+-  `.color-part-section` – Themed color section.
 
 ## Spacing Utilities
 
 ### Padding Top (`pt-`)
 
--  `.pt-1` to `.pt-10` – Adds increasing top padding from 1 to 10 units.
+-  `.pt-1` to `.pt-10` – Adds increasing top padding.
 
 ### Padding Bottom (`pb-`)
 
--  `.pb-1` to `.pb-10` – Adds increasing bottom padding from 1 to 10 units.
+-  `.pb-1` to `.pb-10` – Adds increasing bottom padding.
 
 ### Padding Left (`pl-`)
 
--  `.pl-1` to `.pl-10` – Adds increasing left padding from 1 to 10 units.
+-  `.pl-1` to `.pl-10` – Adds increasing left padding.
 
 ### Padding Right (`pr-`)
 
--  `.pr-1` to `.pr-10` – Adds increasing right padding from 1 to 10 units.
+-  `.pr-1` to `.pr-10` – Adds increasing right padding.
 
 ### Padding Horizontal (`px-`)
 
--  `.px-1` to `.px-10` – Adds increasing horizontal padding (left & right).
+-  `.px-1` to `.px-10` – Adds increasing left & right padding.
 
 ### Padding Vertical (`py-`)
 
--  `.py-1` to `.py-10` – Adds increasing vertical padding (top & bottom).
+-  `.py-1` to `.py-10` – Adds increasing top & bottom padding.
 
 ## Hero Components
 
 -  `.hero` – Main hero section container.
--  `.hero::before` – Pseudo-element for background or overlay styling.
--  `.hero-content` – Container for hero text and elements.
--  `.hero-title` – Styling for main hero heading.
--  `.hero-subtitle` – Styling for hero subtitle text.
--  `.hero-cta` – Container for call-to-action buttons in hero.
--  `.hero-btn` – Base button styling inside hero.
--  `.hero-btn--primary` – Primary styled hero button.
--  `.hero-btn--primary:hover` – Hover state for primary hero button.
--  `.hero-btn--secondary` – Secondary styled hero button.
--  `.hero-btn--secondary:hover` – Hover state for secondary hero button.
--  `.hero[data-colors]` – Hero with customizable color properties.
+-  `.hero::before` – Pseudo-element for background or overlays.
+-  `.hero-content` – Container for hero content.
+-  `.hero-title` – Main heading style in hero.
+-  `.hero-subtitle` – Subtitle text in hero.
+-  `.hero-cta` – Container for hero call-to-action elements.
+-  `.hero-btn` – Base button style in hero.
+-  `.hero-btn--primary` – Primary hero button.
+-  `.hero-btn--primary:hover` – Hover effect for primary button.
+-  `.hero-btn--secondary` – Secondary hero button.
+-  `.hero-btn--secondary:hover` – Hover effect for secondary button.
+-  `.hero[data-colors]` – Applies theme-based color variants.
 
 ### Hero Color Variants
 
@@ -104,72 +99,89 @@
 
 ## Quotes
 
--  `.quote` – Styles blockquotes or quote elements.
--  `.quote:hover` – Hover state for quote.
--  `.quote::before` – Decorative quote mark or icon.
+-  `.quote` – Styles quote elements.
+-  `.quote:hover` – Hover effect on quote.
+-  `.quote::before` – Decorative quote symbol or icon.
 
 ## Spacing Between Elements
 
--  `.space > * + *` – Adds default spacing between direct children.
--  `.space.tight > * + *` – Reduced spacing between children.
--  `.space.loose > * + *` – Increased spacing between children.
--  `.space.huge > * + *` – Very large spacing between children.
+-  `.space > * + *` – Adds spacing between direct children.
+-  `.space.tight > * + *` – Reduced spacing.
+-  `.space.loose > * + *` – Looser spacing.
+-  `.space.huge > * + *` – Very large spacing.
 
 ## Buttons
 
--  `.btn` – Base button styling.
--  `.btn:hover` – Hover effect on button.
--  `.btn.secondary` – Secondary button style.
--  `.btn.secondary:hover` – Hover state for secondary button.
--  `.btn.success` – Success (green) button style.
--  `.btn.danger` – Danger (red) button style.
--  `.btn.large` – Large button size.
--  `.btn.small` – Small button size.
+-  `.btn` – Base button.
+-  `.btn:hover` – Hover effect.
+-  `.btn.secondary` – Secondary style.
+-  `.btn.secondary:hover` – Hover for secondary button.
+-  `.btn.success` – Success style button.
+-  `.btn.danger` – Danger style button.
+-  `.btn.large` – Large size button.
+-  `.btn.small` – Small size button.
 
 ## Cards
 
 -  `.card` – Base card style.
--  `.card:hover` – Hover effect on card.
--  `.card.highlight` – Highlighted card appearance.
--  `.card.compact` – Compact card with less padding.
--  `.card.spacious` – Spacious card with more padding.
+-  `.card:hover` – Hover effect.
+-  `.card.highlight` – Highlighted card.
+-  `.card.compact` – Compact padding card.
+-  `.card.spacious` – Spacious padding card.
 
 ## Forms
 
--  `.form-group` – Wrapper for form fields.
--  `.form-group label` – Styles form labels.
--  `.form-group input` – Styles input fields.
--  `.form-group textarea` – Styles textareas.
--  `.form-group select` – Styles select dropdowns.
--  `.form-group input:focus` – Focus style for inputs.
--  `.form-group textarea:focus` – Focus style for textareas.
--  `.form-group select:focus` – Focus style for selects.
+-  `.form-group` – Form wrapper.
+-  `.form-group label` – Label styling.
+-  `.form-group input` – Input field styling.
+-  `.form-group textarea` – Textarea styling.
+-  `.form-group select` – Dropdown styling.
+-  `.form-group input:focus` – Focus effect on input.
+-  `.form-group textarea:focus` – Focus effect on textarea.
+-  `.form-group select:focus` – Focus effect on select.
 
 ## Responsive Utilities
 
--  `.hide-mobile` – Hides elements on mobile.
--  `.show-mobile` – Shows elements only on mobile.
-
-## Media Queries
+-  `.hide-mobile` – Hide on mobile devices.
+-  `.show-mobile` – Show only on mobile devices.
 
 ### `@media (max-width: 768px)`
 
--  `.hide-mobile` – Hides on small screens.
--  `.show-mobile` – Shows on small screens.
--  `.grid` – Adjusts grid for mobile.
--  `.flex` – Adjusts flex for mobile.
--  `.flex.mobile-row` – Forces flex direction to row on mobile.
--  `.hero` – Responsive adjustments for hero section.
--  `.hero-cta` – Responsive hero CTA container.
--  `.hero-btn` – Responsive hero buttons.
+-  `.hide-mobile` – Applies hiding at this breakpoint.
+-  `.show-mobile` – Applies showing at this breakpoint.
+-  `.grid` – Adjusted grid layout.
+-  `.flex` – Adjusted flex layout.
+-  `.flex.mobile-row` – Forces flex row on mobile.
+-  `.hero` – Responsive tweaks for hero.
+-  `.hero-cta` – Responsive layout for call-to-action.
+-  `.hero-btn` – Adjusted button styles.
 
 ## Theming
 
--  `.theme-dark` – Applies dark theme styles globally.
--  `.theme-dark .card` – Dark-themed cards.
--  `.theme-dark .form-group input` – Dark-themed inputs.
--  `.theme-dark .form-group textarea` – Dark-themed textareas.
--  `.theme-dark .form-group select` – Dark-themed selects.
+-  `.theme-dark` – Enables dark mode theme.
+-  `.theme-dark .card` – Dark styled cards.
+-  `.theme-dark .form-group input` – Dark themed input.
+-  `.theme-dark .form-group textarea` – Dark textarea.
+-  `.theme-dark .form-group select` – Dark dropdown select.
+
+## Profile Pictures
+
+-  `.profile-picture-square`
+-  `.profile-picture-square-sm`
+-  `.profile-picture-circle`
+-  `.profile-picture-circle-sm`
+
+## Floating Elements
+
+-  `.floating` – Floating animation or effect.
+-  `@keyframes floating` – Floating keyframe definition.
+
+## Gradients
+
+-  `.gradient-1`
+-  `.gradient-2`
+-  `.gradient-3`
+-  `.gradient-4`
 
 ## Animations
 
@@ -214,29 +226,19 @@
 -  `.anim-bounce`
 -  `.anim-pulse`
 -  `.anim-shake`
--  `.anim-fast` – Fast animation speed.
--  `.anim-slow` – Slow animation speed.
--  `.anim-slower` – Slower animation speed.
--  `.anim-delay-1` to `.anim-delay-5` – Animation delays from shortest to longest.
+-  `.anim-fast` – Fast animation.
+-  `.anim-slow` – Slow animation.
+-  `.anim-slower` – Slower animation.
+-  `.anim-delay-1` to `.anim-delay-5` – Delays from 1 to 5.
 
 ### Hover Animations
 
--  `.hover-scaleUp:hover` – Scales element up on hover.
--  `.hover-pulse:hover` – Pulses element on hover.
+-  `.hover-scaleUp`
+-  `.hover-scaleUp:hover`
+-  `.hover-pulse`
+-  `.hover-pulse:hover`
+-  `.hover-pulse:not(:hover)`
 
 ### Stagger Animation Helpers
 
--  `.stagger-container > *:nth-child(1)` through `.stagger-container > *:nth-child(6)` – Apply stagger delays for children.
-
-## Demo Components
-
--  `.demo-section` – Container for demo content.
--  `.demo-section h2` – Heading style inside demo section.
--  `.color-demo` – Displays color swatches or palettes.
-
-## Gradients
-
--  `.gradient-1`
--  `.gradient-2`
--  `.gradient-3`
--  `.gradient-4`
+-  `.stagger-container > *:nth-child(1)` through `.stagger-container > *:nth-child(6)` – Staggered animations by order.
