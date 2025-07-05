@@ -1,0 +1,322 @@
+<link rel="stylesheet" href="taurv1.css" />
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+      <title>Chat Application</title>
+      <link rel="stylesheet" href="your-framework.css" />
+      <style>
+         /* Only custom styles specific to chat functionality */
+         .chat-container {
+            height: 100vh;
+            max-height: 100vh;
+            overflow: hidden;
+         }
+
+         .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            min-height: 0;
+         }
+
+         .message {
+            margin-bottom: 16px;
+         }
+
+         .message.own {
+            text-align: right;
+         }
+
+         .message.own .message-content {
+            background: #4f46e5;
+            color: white;
+            margin-left: auto;
+         }
+
+         .message-content {
+            display: inline-block;
+            max-width: 70%;
+            word-wrap: break-word;
+         }
+
+         .chat-input {
+            position: sticky;
+            bottom: 0;
+            background: white;
+         }
+
+         .typing-indicator {
+            font-style: italic;
+            color: #666;
+         }
+
+         .online-indicator {
+            width: 10px;
+            height: 10px;
+            background: #10b981;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 8px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container narrow">
+         <div class="navbar">
+            <div class="flex between">
+               <div class="navbar-logo">ChatApp</div>
+               <div class="flex center">
+                  <div
+                     class="profile-picture-circle"
+                     style="background: #4f46e5"
+                  ></div>
+                  <span class="px-2" style="color: white">John Doe</span>
+                  <div class="online-indicator"></div>
+               </div>
+            </div>
+         </div>
+
+         <div class="card chat-container">
+            <div class="flex column" style="height: 100%">
+               <!-- Chat Header -->
+               <div
+                  class="flex between py-2 px-4"
+                  style="border-bottom: 1px solid #e5e7eb"
+               >
+                  <div class="flex center">
+                     <div
+                        class="profile-picture-circle"
+                        style="background: #10b981"
+                     ></div>
+                     <div class="px-2">
+                        <h4>Sarah Wilson</h4>
+                        <small style="color: #6b7280">Online</small>
+                     </div>
+                  </div>
+                  <div class="flex center">
+                     <button class="btn secondary">📞</button>
+                     <button class="btn secondary px-2">📹</button>
+                     <button class="btn secondary">⚙️</button>
+                  </div>
+               </div>
+
+               <!-- Messages Area -->
+               <div class="chat-messages flex column space py-3 px-4">
+                  <div class="message anim-fadeInUp">
+                     <div class="flex">
+                        <div
+                           class="profile-picture-circle"
+                           style="background: #10b981"
+                        ></div>
+                        <div class="px-2">
+                           <div class="message-content box">
+                              Hey! How's your day going?
+                           </div>
+                           <small style="color: #6b7280">2:30 PM</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="message own anim-fadeInUp anim-delay-1">
+                     <div class="flex end">
+                        <div class="px-2">
+                           <div
+                              class="message-content r-box"
+                              style="background: #4f46e5; color: white"
+                           >
+                              Pretty good! Just finished a big project. How
+                              about you?
+                           </div>
+                           <small style="color: #6b7280">2:32 PM</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="message anim-fadeInUp anim-delay-2">
+                     <div class="flex">
+                        <div
+                           class="profile-picture-circle"
+                           style="background: #10b981"
+                        ></div>
+                        <div class="px-2">
+                           <div class="message-content box">
+                              That's awesome! Congrats on finishing the
+                              project 🎉
+                           </div>
+                           <small style="color: #6b7280">2:33 PM</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="message own anim-fadeInUp anim-delay-3">
+                     <div class="flex end">
+                        <div class="px-2">
+                           <div
+                              class="message-content r-box"
+                              style="background: #4f46e5; color: white"
+                           >
+                              Thanks! Want to grab coffee later to
+                              celebrate?
+                           </div>
+                           <small style="color: #6b7280">2:35 PM</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="message anim-fadeInUp anim-delay-4">
+                     <div class="flex">
+                        <div
+                           class="profile-picture-circle"
+                           style="background: #10b981"
+                        ></div>
+                        <div class="px-2">
+                           <div class="message-content box">
+                              Absolutely! How about that new place
+                              downtown?
+                           </div>
+                           <small style="color: #6b7280">2:36 PM</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="message own anim-fadeInUp anim-delay-5">
+                     <div class="flex end">
+                        <div class="px-2">
+                           <div
+                              class="message-content r-box"
+                              style="background: #4f46e5; color: white"
+                           >
+                              Perfect! See you at 4 PM?
+                           </div>
+                           <small style="color: #6b7280">2:37 PM</small>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="typing-indicator px-4 py-2">
+                     <div class="flex">
+                        <div
+                           class="profile-picture-circle"
+                           style="background: #10b981"
+                        ></div>
+                        <div class="px-2">
+                           <div class="message-content box">
+                              Sarah is typing...
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Chat Input -->
+               <div
+                  class="chat-input py-3 px-4"
+                  style="border-top: 1px solid #e5e7eb"
+               >
+                  <div class="flex">
+                     <div class="form-group" style="flex: 1; margin: 0">
+                        <input
+                           type="text"
+                           placeholder="Type a message..."
+                           id="messageInput"
+                        />
+                     </div>
+                     <button class="btn px-3" onclick="sendMessage()">
+                        Send
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script>
+         const messageInput = document.getElementById("messageInput");
+         const chatMessages = document.querySelector(".chat-messages");
+         const typingIndicator = document.querySelector(
+            ".typing-indicator"
+         );
+
+         function sendMessage() {
+            const message = messageInput.value.trim();
+            if (!message) return;
+
+            // Create new message element
+            const messageDiv = document.createElement("div");
+            messageDiv.className = "message own anim-fadeInUp";
+            messageDiv.innerHTML = `
+                <div class="flex end">
+                    <div class="px-2">
+                        <div class="message-content r-box" style="background: #4f46e5; color: white;">
+                            ${message}
+                        </div>
+                        <small style="color: #6b7280;">${new Date().toLocaleTimeString(
+                           [],
+                           { hour: "2-digit", minute: "2-digit" }
+                        )}</small>
+                    </div>
+                </div>
+            `;
+
+            // Insert before typing indicator
+            chatMessages.insertBefore(messageDiv, typingIndicator);
+            messageInput.value = "";
+
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            // Simulate response after 2 seconds
+            setTimeout(simulateResponse, 2000);
+         }
+
+         function simulateResponse() {
+            const responses = [
+               "Sounds great! Looking forward to it 😊",
+               "That works perfectly for me!",
+               "See you then! 👋",
+               "Can't wait! ☕",
+               "Perfect timing!",
+            ];
+
+            const randomResponse =
+               responses[Math.floor(Math.random() * responses.length)];
+
+            const messageDiv = document.createElement("div");
+            messageDiv.className = "message anim-fadeInUp";
+            messageDiv.innerHTML = `
+                <div class="flex">
+                    <div class="profile-picture-circle" style="background: #10b981;"></div>
+                    <div class="px-2">
+                        <div class="message-content box">
+                            ${randomResponse}
+                        </div>
+                        <small style="color: #6b7280;">${new Date().toLocaleTimeString(
+                           [],
+                           { hour: "2-digit", minute: "2-digit" }
+                        )}</small>
+                    </div>
+                </div>
+            `;
+
+            chatMessages.insertBefore(messageDiv, typingIndicator);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+         }
+
+         // Send message on Enter key
+         messageInput.addEventListener("keypress", function (e) {
+            if (e.key === "Enter") {
+               sendMessage();
+            }
+         });
+
+         // Auto-scroll to bottom on page load
+         window.addEventListener("load", function () {
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+         });
+      </script>
+   </body>
+</html>
