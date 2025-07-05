@@ -552,7 +552,7 @@ li {
       var(--hero-custom-accent, var(--hero-accent)) 100%
    );
 }
-/* Responsive Design */
+
 @media (max-width: 768px) {
    .hero {
       min-height: 80vh;
@@ -614,8 +614,6 @@ li {
    justify-content: flex-end;
 }
 
-/* === INTELLIGENT SPACING === */
-/* Contextual spacing that adapts */
 .space > * + * {
    margin-top: 1rem;
 }
@@ -629,8 +627,6 @@ li {
    margin-top: 4rem;
 }
 
-/* === SMART COMPONENTS === */
-/* Buttons with automatic variants */
 .btn {
    display: inline-flex;
    align-items: center;
