@@ -692,7 +692,7 @@ hr {
    border: none;
    height: 1px;
    color: #575656; /* old IE */
-   background-color: #757575; /* Modern Browsers */
+   background-color: #3b3b3b8c; /* Modern Browsers */
 }
 
 .card:hover {
