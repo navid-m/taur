@@ -239,6 +239,6 @@
 -  `.hover-pulse:hover`
 -  `.hover-pulse:not(:hover)`
 
-### Stagger Animation Helpers
+### Stagger Animations
 
 -  `.stagger-container > *:nth-child(1)` through `.stagger-container > *:nth-child(6)` – Staggered animations by order.
