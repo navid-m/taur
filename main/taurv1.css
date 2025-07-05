@@ -1371,18 +1371,18 @@ hr {
    will-change: transform, opacity;
 }
 
-.demo-section {
+.part-section {
    margin-bottom: 3rem;
    padding: 2rem;
    background: #f8fafc;
    border-radius: 1rem;
 }
 
-.demo-section h2 {
+.part-section h2 {
    margin-bottom: 1rem;
 }
 
-.color-demo {
+.color-part-section {
    width: 100px;
    height: 100px;
    border-radius: 0.5rem;
