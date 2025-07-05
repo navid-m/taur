@@ -1,3 +1,10 @@
+/* 
+===========================================
+TAUR CSS FRAMEWORK
+Author: Navid M
+=========================================== 
+*/
+
 * {
    box-sizing: border-box;
    font-weight: 380;
@@ -19,8 +26,6 @@ body {
    min-height: 100vh;
 }
 
-/* === INTELLIGENT TYPOGRAPHY === */
-/* Auto-scaling typography with semantic hierarchy */
 h1,
 h2,
 h3,
@@ -64,8 +69,6 @@ li {
    max-width: 70ch;
 }
 
-/* === SMART LAYOUT SYSTEM === */
-/* Single class creates responsive layouts */
 .grid {
    display: grid;
    gap: 1rem;
