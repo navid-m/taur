@@ -827,11 +827,29 @@ li {
    overflow: hidden;
 }
 
+.profile-picture-square-sm {
+   display: inline-block;
+   width: 50px; /* Adjust size as needed */
+   height: 50px;
+   object-fit: cover;
+   border-radius: 8px; /* Slight rounding for aesthetics */
+   overflow: hidden;
+}
+
 /* Profile Picture - Circle */
 .profile-picture-circle {
    display: inline-block;
    width: 100px; /* Match square size */
    height: 100px;
+   object-fit: cover;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.profile-picture-circle-sm {
+   display: inline-block;
+   width: 50px; /* Match square size */
+   height: 50px;
    object-fit: cover;
    border-radius: 50%;
    overflow: hidden;
