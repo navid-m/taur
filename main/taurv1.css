@@ -688,6 +688,13 @@ li {
    border: 1px solid #f1f5f9;
 }
 
+hr {
+   border: none;
+   height: 1px;
+   color: #575656; /* old IE */
+   background-color: #757575; /* Modern Browsers */
+}
+
 .card:hover {
    transform: translateY(-4px);
    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
