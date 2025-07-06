@@ -119,6 +119,7 @@ li {
    border-right-style: solid;
    border-bottom-style: none;
    border-left-style: solid;
+   border-width: 1px;
 }
 
 .success-box {
