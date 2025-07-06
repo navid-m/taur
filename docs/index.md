@@ -242,3 +242,71 @@
 ### Stagger Animations
 
 -  `.stagger-container > *:nth-child(1)` through `.stagger-container > *:nth-child(6)` – Staggered animations by order.
+
+### **Forms (Additional Input Group System)**
+
+#### Input Group System
+
+-  `.input-group` – Wrapper around form controls for enhanced UX.
+-  `.input-field` – Input with floating label behavior.
+-  `.input-field:focus` – Triggers label and underline changes.
+-  `.input-field:valid + .input-label` – Keeps label floated on valid input.
+-  `.input-label` – Floating label for inputs.
+-  `.input-group::after` – Underline element.
+-  `.input-field:focus ~ .input-group::after` – Focus animation for underline.
+-  `.input-group:focus-within::after` – Alternate focus trigger for underline.
+-  `.input-group.success`, `.input-group.error`, `.input-group.warning` – State variants.
+-  `.input-group.success .input-field:focus`, etc. – Adjust label and underline styles based on validation state.
+
+---
+
+### **Navbar**
+
+## Navbar
+
+-  `.navbar` – Navbar wrapper.
+-  `.navbar-logo` – Logo container.
+-  `.navbar-menu` – Main nav links container.
+-  `.navbar-menu a` – Individual nav links.
+-  `.navbar-menu a:hover` – Hover style for nav links.
+-  `.navbar-toggle` – Toggle icon for mobile nav.
+-  `.navbar-toggle span` – Hamburger lines.
+-  `.navbar-menu-mobile` – Mobile-specific menu.
+-  `.navbar.open .navbar-menu-mobile` – Mobile nav in open state.
+
+**Responsive (@media max-width: 768px):**
+
+-  `.navbar-menu` – Responsive behavior.
+-  `.navbar-toggle` – Display toggle icon on mobile.
+-  `.navbar.open .navbar-menu-mobile` – Shows the mobile nav menu.
+
+---
+
+## Code Blocks
+
+-  `.code-block` – Container for styled code display.
+-  `.code-block:hover` – Hover state with enhancements.
+-  `.code-block-header` – Header above code (e.g., with language or actions).
+-  `.code-block-header::before` – Decorative element.
+-  `.code-block-language` – Language label.
+-  `.code-block-actions` – Action buttons container (e.g., copy).
+-  `.code-block-content` – Scrollable content wrapper.
+-  `.code-block-content::before` – Visual embellishment for content area.
+-  `.code-block pre` – Preformatted text container.
+-  `.code-block code` – Inline code styling.
+-  `.code-block-content::-webkit-scrollbar` – Custom scrollbar styling.
+-  `.code-block-content::-webkit-scrollbar-track` – Scrollbar track.
+-  `.code-block-content::-webkit-scrollbar-thumb` – Scrollbar thumb.
+-  `.code-block-content::-webkit-scrollbar-thumb:hover` – Hover effect for thumb.
+
+**Responsive:**
+
+-  `.code-block`, `.code-block-header`, `.code-block-content`, `.code-block pre` – Mobile layout adjustments.
+
+---
+
+### **Utility / Miscellaneous**
+
+#### Text
+
+-  `.text-white` – Applies white text color.
