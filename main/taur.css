@@ -226,6 +226,19 @@ li {
    background-color: #ff9800;
 }
 
+.theme-dark h2,
+.theme-dark h1,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark input {
+   color: white !important;
+}
+
+.text-white {
+   color: white !important;
+}
+
 .pt-1 {
    padding-top: 0.25rem;
 }
@@ -1471,7 +1484,6 @@ hr {
 .part-section {
    margin-bottom: 3rem;
    padding: 2rem;
-   background: #f8fafc;
    border-radius: 1rem;
 }
 
